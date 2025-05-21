@@ -1,0 +1,21 @@
+---
+services:
+  webtop:
+    image: ghcr.io/learn-compsci/webtop:latest
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Singapore
+      - SUBFOLDER=/
+      - TITLE="CS1010 WebTop"
+    volumes:
+      - ./data:/config
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./config/xfwm4.xml:/config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml:ro
+    ports:
+      - 3000:3000
+      - 3001:3001
+    shm_size: "1gb"
+    restart: unless-stopped
