@@ -18,3 +18,6 @@ A web-based Linux (Debian 12 + Xfce) desktop environment.
 4. Your files can be shared / saved in the `data/` folder: this is shared between your OS and this interface. Try adding a file to `data/Desktop/` and see what happens in the web interface!
 
 5. Press `Control` and `C` together on the terminal window where you ran `docker compose up` to stop the interface.
+
+
+6. To update the environment to the latest we provide, use `docker compose pull`.
