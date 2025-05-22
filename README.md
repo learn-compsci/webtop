@@ -1,23 +1,58 @@
+<!-- omit in toc -->
 ## WebTop
 
-A web-based Linux (Debian 12 + Xfce) desktop environment.
+`webtop` ("web desktop") is a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 with XFCE) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Your files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
 
-## Usage
+<!-- omit in toc -->
+## Table of Contents 
+- [How to use `webtop`](#how-to-use-webtop)
+- [Advanced Usage](#advanced-usage)
+- [Design and Rationale](#design-and-rationale)
 
-1. Install Docker for your platform
+
+## How to use `webtop`
+
+This section assumes you have little to no experience with a terminal or `git`. 
+
+1. Download `webtop` by clicking on [this link](https://github.com/learn-compsci/webtop/archive/refs/heads/main.zip). It should download a `.zip` file. Unzip into a folder of your choice (but remember where it is!)
+
+2. Install Docker for your platform. This is what ultimately runs `webtop`. 
       - Windows: https://docs.docker.com/desktop/setup/install/windows-install/
       - Mac: https://docs.docker.com/desktop/setup/install/mac-install/  
       - Linux-based: https://docs.docker.com/engine/install/
 
-2. Run `docker compose up` in this folder. Use your operating system's terminal application. 
+3. Now, start `webtop` via the scripts we provide.
+      - Windows: double click on `windows.bat`
+      - Mac: double click on `mac.command`
+      - Linux: double click on `linux.sh`
+  
+      You may need to right-click on the file and make it executable in some way, or click yes on a popup, before it can run. The scripts should cause a terminal window to pop up and stay open.
 
-3. Open your browser and go to the site `localhost:3000`. You should be able to see what looks like a user interface (desktop) that looks something like this.
+4. Open your browser (e.g., Chrome/Firefox/Safari) and type `localhost:3000` into your address bar and hit ENTER. You should be able to see what looks like a user interface (desktop) that looks something like this.
 
 ![desktop](images/desktop.png)
 
-4. Your files can be shared / saved in the `data/` folder: this is shared between your OS and this interface. Try adding a file to `data/Desktop/` and see what happens in the web interface!
+5. The files you create on `webtop` are automatically shared / synced to the `data/` folder that should be created. Try adding a file to `data/Desktop/` and see what happens in the web interface!
 
-5. Press `Control` and `C` together on the terminal window where you ran `docker compose up` to stop the interface.
+6. Close the terminal window to stop `webtop`.
 
+## Advanced Usage
 
-6. To update the environment to the latest we provide, use `docker compose pull`.
+This section is appropriate if you are familiar with the terminal and `git`.
+
+1. Clone the repository to your local machine using `git clone git@github.com:learn-compsci/webtop.git`.
+
+2. Install Docker for your operating system.
+
+3. Run `docker compose up` in the cloned folder.
+
+4. Open your browser and go to the site `localhost:3000`. 
+
+5. To update the environment to the latest we provide, use `docker compose pull`.
+
+## Design and Rationale
+
+Getting non-Linux users to run a Linux operating system isn't always easy. Installing multiple operating systems on the same machine is an involved process. Virtual machines (VMs) are sometimes slow, and it's hard to run them with equal features across both Windows (x86 machines) and Mac (ARM machines) (we've tried!). 
+
+`webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on [KasmVNC](https://github.com/linuxserver/docker-baseimage-kasmvnc). KasmVNC is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). Our contributions are limited to modifications of the base images to make them appropriate for our use case.
+
