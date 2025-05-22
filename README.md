@@ -8,6 +8,7 @@
 - [How to use `webtop`](#how-to-use-webtop)
 - [Advanced Usage](#advanced-usage)
 - [Design and Rationale](#design-and-rationale)
+- [Testing](#testing)
 
 
 ## How to use `webtop`
@@ -23,8 +24,7 @@ This section assumes you have little to no experience with a terminal or `git`.
 
 3. Now, start `webtop` via the scripts we provide.
       - Windows: double click on `windows.bat`
-      - Mac: double click on `mac.command`
-      - Linux: double click on `linux.sh`
+      - Mac/Linux: see the advanced commands below (`docker compose up`) in your Terminal.
   
       You may need to right-click on the file and make it executable in some way, or click yes on a popup, before it can run. The scripts should cause a terminal window to pop up and stay open.
 
@@ -56,3 +56,11 @@ Getting non-Linux users to run a Linux operating system isn't always easy. Insta
 
 `webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on [KasmVNC](https://github.com/linuxserver/docker-baseimage-kasmvnc). KasmVNC is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). Our contributions are limited to modifications of the base images to make them appropriate for our use case.
 
+6. To update the environment to the latest we provide, use `docker compose pull`.
+
+## Testing
+
+- Check that audio works (e.g., go to Firefox (click the browser icon in the bottom dock), go to YouTube, click on any video). You may have to click or mouse over the icon like thing at the middle left of the screen, which opens a bar at the top middle of the screen, and click the audio icon.
+- Check that the display size and scaling is OK
+- Check that resizing the screen works (if you drag the edges of the VM window, the VM should resize)
+- Check that there's little to no lag in inputs to say, the terminal, or a text editor.
