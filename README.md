@@ -8,8 +8,9 @@
 - [How to use `webtop`](#how-to-use-webtop)
 - [Advanced Usage](#advanced-usage)
 - [Design and Rationale](#design-and-rationale)
-- [Troubleshooting](#troubleshooting)
   - [Error: failed to bind host port..](#error-failed-to-bind-host-port)
+  - [Error: "Cannot connect to the Docker daemon"](#error-cannot-connect-to-the-docker-daemon)
+  - [Audio does not work](#audio-does-not-work)
 - [Testing](#testing)
 
 
@@ -58,16 +59,38 @@ Getting non-Linux users to run a Linux operating system isn't always easy. Insta
 
 `webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on [KasmVNC](https://github.com/linuxserver/docker-baseimage-kasmvnc). KasmVNC is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). Our contributions are limited to modifications of the base images to make them appropriate for our use case.
 
-6. To update the environment to the latest we provide, use `docker compose pull`.
-
-
-## Troubleshooting
 
 ### Error: failed to bind host port..
 
-If you see an error like "failed to bind host port for 0.0.0.0:3000", that means you might already have an application running on that port. 
+If you see an error like "failed to bind host port for 0.0.0.0:3000", that means you might already have an application running on that port.
 
-Solution: go to the `docker-compose.yml` file in this folder. Under `ports`, change the `3000:3000` to e.g., `3005:3000`, where `3005` is the new port number on your existing operating system. Now you can use `localhost:3005` to access WebTop.
+**Solution:**  
+- Go to the `docker-compose.yml` file in this folder. 
+- Under `ports`, change the `3000:3000` to e.g., `3005:3000`, where `3005` is the new port number on your existing operating system. 
+- Now you can use `localhost:3005` to access WebTop.
+
+---
+
+### Error: "Cannot connect to the Docker daemon"
+
+This usually means Docker is not running on your system.
+
+**Solution:**  
+- **Windows/Mac:** Open Docker Desktop and ensure it is running. You might have to restart your computer.
+- **Linux:** Start Docker with `sudo systemctl start docker` or `sudo service docker start`.
+
+---
+
+### Audio does not work
+
+You have to manually enable audio in the browser tab that's running WebTop (each time). This is intentional.
+
+**Solution:**  
+- Click the tiny arrow in the middle left of the screen (it looks like a play button). This opens a bar at the top middle of the screen. 
+- Click the speaker icon to enable audio.
+---
+
+
 
 ## Testing
 

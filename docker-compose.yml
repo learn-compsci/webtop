@@ -13,7 +13,6 @@ services:
     volumes:
       - ./data:/config
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./config/xfwm4.xml:/config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml:ro
     ports:
       - 3000:3000
       - 3001:3001
