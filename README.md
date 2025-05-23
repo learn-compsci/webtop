@@ -44,6 +44,8 @@ This section assumes you have little to no experience with a terminal or `git`.
 
 - **Do not install applications system-wide**. The `webtop` environment only guarantees that files in your home directory (`~/` i.e., `/config`) are retained on each reboot. If you install applications system-wide, they may not be available the next time you start `webtop`, especially if you update the environment.
 
+  - You can install applications locally (within `~/`), or use [proot-apps](https://github.com/linuxserver/proot-apps) to do this, but we try to install everything that you need from the start.
+
 ## Advanced Usage
 
 This section is appropriate if you are familiar with the terminal and `git`.
