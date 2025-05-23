@@ -6,6 +6,7 @@
 <!-- omit in toc -->
 ## Table of Contents 
 - [How to use `webtop`](#how-to-use-webtop)
+  - [WARNING: Important Notes!](#warning-important-notes)
 - [Advanced Usage](#advanced-usage)
 - [Design and Rationale](#design-and-rationale)
   - [Error: failed to bind host port..](#error-failed-to-bind-host-port)
@@ -38,6 +39,10 @@ This section assumes you have little to no experience with a terminal or `git`.
 5. The files you create on `webtop` are automatically shared / synced to the `data/` folder that should be created. Try adding a file to `data/Desktop/` and see what happens in the web interface!
 
 6. Close the terminal window to stop `webtop`.
+
+### WARNING: Important Notes!
+
+- **Do not install applications system-wide**. The `webtop` environment only guarantees that files in your home directory (`~/` i.e., `/config`) are retained on each reboot. If you install applications system-wide, they may not be available the next time you start `webtop`, especially if you update the environment.
 
 ## Advanced Usage
 
