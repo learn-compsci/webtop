@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=Asia/Singapore
       - SUBFOLDER=/
-      - TITLE="CS1010 WebTop"
+      - TITLE=CS1010 WebTop
     volumes:
       - ./data:/config
       - /var/run/docker.sock:/var/run/docker.sock
