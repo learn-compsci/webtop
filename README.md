@@ -8,6 +8,8 @@
 - [How to use `webtop`](#how-to-use-webtop)
 - [Advanced Usage](#advanced-usage)
 - [Design and Rationale](#design-and-rationale)
+- [Troubleshooting](#troubleshooting)
+  - [Error: failed to bind host port..](#error-failed-to-bind-host-port)
 - [Testing](#testing)
 
 
@@ -23,7 +25,7 @@ This section assumes you have little to no experience with a terminal or `git`.
       - Linux-based: https://docs.docker.com/engine/install/
 
 3. Now, start `webtop` via the scripts we provide.
-      - Windows: double click on `windows.bat`
+      - Windows: double click on `windows.bat`. You may have to click "More Info" on the popup that appears to force Windows to run this script.
       - Mac/Linux: see the advanced commands below (`docker compose up`) in your Terminal.
   
       You may need to right-click on the file and make it executable in some way, or click yes on a popup, before it can run. The scripts should cause a terminal window to pop up and stay open.
@@ -57,6 +59,15 @@ Getting non-Linux users to run a Linux operating system isn't always easy. Insta
 `webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on [KasmVNC](https://github.com/linuxserver/docker-baseimage-kasmvnc). KasmVNC is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). Our contributions are limited to modifications of the base images to make them appropriate for our use case.
 
 6. To update the environment to the latest we provide, use `docker compose pull`.
+
+
+## Troubleshooting
+
+### Error: failed to bind host port..
+
+If you see an error like "failed to bind host port for 0.0.0.0:3000", that means you might already have an application running on that port. 
+
+Solution: go to the `docker-compose.yml` file in this folder. Under `ports`, change the `3000:3000` to e.g., `3005:3000`, where `3005` is the new port number on your existing operating system. Now you can use `localhost:3005` to access WebTop.
 
 ## Testing
 
