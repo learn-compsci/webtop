@@ -1,11 +1,12 @@
 <!-- omit in toc -->
 ## WebTop
 
-`webtop` ("web desktop") is a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 with XFCE) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Your files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
+`webtop` ("web desktop") is a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 with the XFCE user interface) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Your files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
 
 <!-- omit in toc -->
 ## Table of Contents 
 - [How to use `webtop`](#how-to-use-webtop)
+- [Updating `webtop`](#updating-webtop)
   - [WARNING: Important Notes!](#warning-important-notes)
 - [Advanced Usage](#advanced-usage)
 - [Design and Rationale](#design-and-rationale)
@@ -21,14 +22,18 @@ This section assumes you have little to no experience with a terminal or `git`.
 
 1. Download `webtop` by clicking on [this link](https://github.com/learn-compsci/webtop/archive/refs/heads/main.zip). It should download a `.zip` file. Unzip into a folder of your choice (but remember where it is!)
 
-2. Install Docker for your platform. This is what ultimately runs `webtop`. 
+2. Install Docker for your platform. Docker is the technology that what ultimately runs `webtop`. 
       - Windows: https://docs.docker.com/desktop/setup/install/windows-install/
       - Mac: https://docs.docker.com/desktop/setup/install/mac-install/  
       - Linux-based: https://docs.docker.com/engine/install/
 
 3. Now, start `webtop` via the scripts we provide.
-      - Windows: double click on `windows.bat`. You may have to click "More Info" on the popup that appears to force Windows to run this script.
-      - Mac/Linux: see the advanced commands below (`docker compose up`) in your Terminal.
+      - Windows: double click on `windows-start.bat`. You may have to click "More Info" on the popup that appears to force Windows to run this script.
+      - Mac / Linux
+        - Open a Terminal window in the folder that you unzipped. 
+          - Mac: The easiest way is to follow these instructions while having the folder opened in Finder: https://apple.stackexchange.com/a/438999
+          - Linux: you probably know what to do, otherwise typically right clicking within the folder will show you a "Open in Terminal" option or similar
+        - Type the command `docker compose up` and press ENTER.
   
       You may need to right-click on the file and make it executable in some way, or click yes on a popup, before it can run. The scripts should cause a terminal window to pop up and stay open.
 
@@ -36,15 +41,27 @@ This section assumes you have little to no experience with a terminal or `git`.
 
 ![desktop](images/desktop.png)
 
-5. The files you create on `webtop` are automatically shared / synced to the `data/` folder that should be created. Try adding a file to `data/Desktop/` and see what happens in the web interface!
+5. The files you create on `webtop` are mostly automatically shared / synced to the `data/` folder that should be created. Try adding a file to `data/Desktop/` and see what happens in the web interface!
 
 6. Close the terminal window to stop `webtop`.
+
+## Updating `webtop`
+
+- If we release a new version of `webtop` during the semester (likely), please do the following:
+  - Windows: double click on `windows-update.bat`
+  - Mac and Linux:
+    - Open a terminal instance in the folder (or navigate to the folder with `cd`, etc) with the `docker-compose.yml` file
+    - Run the command `docker compose pull`
+    - Then run the command `docker compose build --no-cache`
+    - After these steps, you follow the steps above to run WebTop as per usual
 
 ### WARNING: Important Notes!
 
 - **Do not install applications system-wide**. The `webtop` environment only guarantees that files in your home directory (`~/` i.e., `/config`) are retained on each reboot. If you install applications system-wide, they may not be available the next time you start `webtop`, especially if you update the environment.
 
   - You can install applications locally (within `~/`), or use [proot-apps](https://github.com/linuxserver/proot-apps) to do this, but we try to install everything that you need from the start.
+
+
 
 ## Advanced Usage
 
