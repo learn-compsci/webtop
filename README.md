@@ -28,14 +28,14 @@ This section assumes you have little to no experience with a terminal or `git`.
       - Linux-based: https://docs.docker.com/engine/install/
 
 3. Now, start `webtop` via the scripts we provide.
-      - Windows: double click on `windows-start.bat`. You may have to click "More Info" on the popup that appears to force Windows to run this script.
+      - Windows: double click on `windows-start.bat`. You may have to click "More Info" on the popup that appears to force Windows to run this script. The script should cause a terminal window to pop up and stay open.
+
       - Mac / Linux
         - Open a Terminal window in the folder that you unzipped. 
           - Mac: The easiest way is to follow these instructions while having the folder opened in Finder: https://apple.stackexchange.com/a/438999
           - Linux: you probably know what to do, otherwise typically right clicking within the folder will show you a "Open in Terminal" option or similar
         - Type the command `docker compose up` and press ENTER.
   
-      You may need to right-click on the file and make it executable in some way, or click yes on a popup, before it can run. The scripts should cause a terminal window to pop up and stay open.
 
 4. Open your browser (e.g., Chrome/Firefox/Safari) and type `localhost:3000` into your address bar and hit ENTER. You should be able to see what looks like a user interface (desktop) that looks something like this.
 
