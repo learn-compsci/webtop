@@ -43,7 +43,7 @@ This section assumes you have little to no experience with a terminal or `git`.
 
 5. The files you create on `webtop` are mostly automatically shared / synced to the `data/` folder that should be created. Try adding a file to `data/Desktop/` and see what happens in the web interface!
 
-6. Close the terminal window to stop `webtop`.
+6. Press the key combination "Control-C" (Control and C keys together) (the key combination might depend on your operating system) to stop Webtop from the terminal. Alternatively, you can just close the terminal window.
 
 ## Updating `webtop`
 
