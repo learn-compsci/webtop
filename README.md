@@ -19,7 +19,7 @@
 This section provides a beginner-friendly guide to installing and using `webtop`. 
 
 
-**❗If you are new to Docker or Git, please click on the relevant OS logo below to access the installation guide for your operating system.**
+**❗If you are new to Docker or Git, <u>please click on the relevant OS logo below</u> to access the installation guide for your operating system.**
 
 [![Windows Logo](images/webtopinstallguide/assets-generic/windows-logo.svg)](webtopinstall-windows.md)
 [![Mac Logo](images/webtopinstallguide/assets-generic/mac-logo.svg)](webtopinstall-mac.md)
