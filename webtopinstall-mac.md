@@ -49,7 +49,7 @@ We host `webtop` on GitHub, and you can easily clone the repository to your loca
 
 2. **Start Docker Desktop**: Start Docker Desktop if it is not already running. 
 
-3. **Start the Webtop Container**: For MacOS users, you can start `webtop` using the terminal. This requires to navigate to the folder where you unzipped `webtop` and run the start script. 
+3. **Start the Webtop Container**: For MacOS users, you can start `webtop` using the terminal. This requires you to navigate to the folder where you unzipped `webtop` and run some commands. 
 
     - **Open Terminal at the folder**: Open the context menu by ctrl-clicking on the `webtop` folder. Select `New Terminal at Folder`. This will open a terminal window in the `webtop` folder.
     <br/><img src="images/webtopinstallguide/assets-mac/mac-install-openterminal.png" alt="Open Terminal" width="600">
@@ -59,7 +59,7 @@ We host `webtop` on GitHub, and you can easily clone the repository to your loca
 
     - **Start Webtop**: In the terminal, type the following command and hit `Enter`:
     ```bash
-    ./docker compose up
+    docker compose up
     ```
     It is important that your terminal is opened in the `webtop` folder, as this is where the Docker Compose file is located. Otherwise, the command will not work correctly.
 
