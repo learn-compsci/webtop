@@ -73,7 +73,7 @@ We host `webtop` on GitHub, and you can easily clone the repository to your loca
     - Hit `Control-C` in the terminal where you started `webtop`. This will stop the Docker container and return you to the command prompt.
     - Close the terminal window where `webtop` is running. This will also stop the Docker container.
 
-### Congratulations! You have successfully installed and run `webtop` on your Windows machine. 
+### Congratulations! You have successfully installed and run `webtop` on your machine. 
 You can now use the Linux desktop environment in your web browser. However, before you dive in to exploring `webtop`, please read the rest of this guide to understand some [important usage notes](#critical-usage-notes) and how to [update](#updating-webtop) `webtop`. Furthermore, if you encounter any issues, we have a [troubleshooting section](#troubleshooting-common-issues) at the end of this guide.
 
 # 🆕📦Updating Webtop🆕📦
