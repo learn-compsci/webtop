@@ -38,7 +38,7 @@ This section provides a beginner-friendly guide to installing and using `webtop`
 This section assumes you are familiar with the terminal, `git`, and Docker. 
 
 
-**❗If you are new to these tools, please refer to the [beginner-friendly guide](#installing-and-using-webtop-for-your-os-beginner-friendly) above**.
+**❗If you are new to these tools, please refer to the [beginner-friendly guide](#beginner-friendly-guide-to-webtop) above.**
 
 ### Requirements
 - **Docker**: Ensure you have Docker installed and running on your system. You can download it from [Docker's official website](https://www.docker.com/).
