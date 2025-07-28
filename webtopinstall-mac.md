@@ -8,7 +8,7 @@ This guide is designed to help you install and use `webtop` on Mac OS, even if y
 
 ## Step 1: Installing Docker Desktop
 Docker is essential for running `webtop`. Follow these steps to install Docker Desktop on Windows:
-1. **Intel Vs Apple Silicone**: Determine if you are running an Intel or Apple Silicon Mac. This will affect which version of Docker you need to download.
+1. **Intel Vs Apple Silicon**: Determine if you are running an Intel or Apple Silicon Mac. This will affect which version of Docker you need to download.
     - **About This Mac**: Click on the Apple logo in the top-left corner of your screen and select "About This Mac." Look for the "Chip" or "Processor" information.
     <br/><img src="images/webtopinstallguide/assets-mac/mac-install-aboutthismac.png" alt="About This Mac" width="300">
     - **Determine Chip Type**: If it says "Apple M1" or "Apple M2," you have an Apple Silicon Mac. If it says "Intel," you have an Intel Mac. <br/><img src="images/webtopinstallguide/assets-mac/mac-install-abouthismac-results.png" alt="Chip Type" width="300">
