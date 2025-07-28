@@ -4,7 +4,6 @@
 
 <!-- omit in toc -->
 # Table of Contents
-- [Design and Rationale](#design-and-rationale)
 - [Beginner Friendly Guide to `webtop`](#beginner-friendly-guide-to-webtop)
 - [`webtop` for Advanced Users](#webtop-for-advanced-users)
   - [Requirements](#requirements)
@@ -14,13 +13,7 @@
   - [Error: failed to bind host port..](#error-failed-to-bind-host-port)
   - [Error: "Cannot connect to the Docker daemon"](#error-cannot-connect-to-the-docker-daemon)
   - [Audio does not work](#audio-does-not-work)
-
-
-# Design and Rationale
-Getting non-Linux users to run a Linux operating system isn't always easy. Installing multiple operating systems on the same machine is an involved process. Virtual machines (VMs) are sometimes slow, and it's hard to run them with equal features across both Windows (x86 machines) and Mac (ARM machines) (we've tried!). 
-
-`webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on [KasmVNC](https://github.com/linuxserver/docker-baseimage-kasmvnc). KasmVNC is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). Our contributions are limited to modifications of the base images to make them appropriate for our use case.
-
+- [Design and Rationale](#design-and-rationale-for-those-interested)
 
 # Beginner Friendly Guide to `webtop`
 This section provides a beginner-friendly guide to installing and using `webtop`. 
@@ -98,3 +91,11 @@ A daemon is a background program that runs continuously and handles requests. If
 **Solution:**  
 - **Windows/Mac:** Open Docker Desktop and ensure it is running. You might have to restart your computer.
 - **Linux:** Start Docker with `sudo systemctl start docker` or `sudo service docker start`.
+
+
+
+# Design and Rationale (for those interested)
+Getting non-Linux users to run a Linux operating system isn't always easy. Installing multiple operating systems on the same machine is an involved process. Virtual machines (VMs) are sometimes slow, and it's hard to run them with equal features across both Windows (x86 machines) and Mac (ARM machines) (we've tried!). 
+
+`webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on the [Selkies](https://github.com/linuxserver/docker-baseimage-selkies) technology. Selkies is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). 
+
