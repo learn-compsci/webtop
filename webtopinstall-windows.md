@@ -54,7 +54,7 @@ We host `webtop` on GitHub, and you can easily clone the repository to your loca
 2. **Start Docker Desktop**: Start Docker Desktop if it is not already running. You should see the Docker icon in your system tray (bottom-right corner of your screen).
 
 3. **Start the Webtop Container**: For windows users, we provide some convenient scripts to start `webtop` without needing to use the terminal.
-    - **Running the Webtop Start Script**: Locate `webtop-start.bat` in the folder where you unzipped `webtop`. Double-click on this file to run it. This script will start the `webtop` container using Docker.
+    - **Running the Webtop Start Script**: Locate `windows-start.bat` in the folder where you unzipped `webtop`. Double-click on this file to run it. This script will start the `webtop` container using Docker.
     </br><img src="images/webtopinstallguide/assets-windows/windows-install-docker-wt-start.png" alt="Hoho Hi there!" width="600">
 
     - **Windows Security Alert (1)**: Windows might issue a security prompt for the script. To run the script, first click `more info` </br><img src="images/webtopinstallguide/assets-windows/windows-install-select-file-protectdialog-base.png" alt="Hoho Hi there!" width="300">
