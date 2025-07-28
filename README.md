@@ -1,6 +1,6 @@
 <!-- omit in toc -->
 # WebTop
-`webtop` ("web desktop") is a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 with the XFCE user interface) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Your files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
+`webtop` ("web desktop") is a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 XFCE) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Your files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
 
 <!-- omit in toc -->
 # Table of Contents
