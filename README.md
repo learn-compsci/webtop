@@ -98,12 +98,3 @@ A daemon is a background program that runs continuously and handles requests. If
 **Solution:**  
 - **Windows/Mac:** Open Docker Desktop and ensure it is running. You might have to restart your computer.
 - **Linux:** Start Docker with `sudo systemctl start docker` or `sudo service docker start`.
-
----
-### Audio does not work
-Your browser will ask you for permission to use audio/camera/microphone each time you start `webtop`. If you do not allow it, audio will not work. Therefore, you have to enable audio in the browser tab that's running WebTop (each time). This is intentional.
-
-**Solution:**  
-- Click the tiny arrow in the middle left of the screen (it looks like a play button). This opens a bar at the top middle of the screen. 
-- Click the speaker icon to enable audio.
-
