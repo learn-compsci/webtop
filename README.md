@@ -59,7 +59,7 @@ This section assumes you are familiar with the terminal, `git`, and Docker.
     ```
 
 4. Open your browser (e.g., Chrome/Firefox/Safari) and go to `localhost:3000`. You should see a Linux desktop interface.
-![desktop](images/desktop.png)
+![desktop](images/webtopinstallguide/assets-windows/windows-webtop-run-success-webpage.png)
 
 5. **Updating Webtop**: If we release a new version of `webtop`, you can update it by running the following commands in the `webtop` folder:
     ```bash
