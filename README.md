@@ -12,7 +12,6 @@
 - [Troubleshooting Common Issues](#troubleshooting-common-issues)
   - [Error: failed to bind host port..](#error-failed-to-bind-host-port)
   - [Error: "Cannot connect to the Docker daemon"](#error-cannot-connect-to-the-docker-daemon)
-  - [Audio does not work](#audio-does-not-work)
 - [Design and Rationale](#design-and-rationale-for-those-interested)
 
 # Beginner Friendly Guide to `webtop`
