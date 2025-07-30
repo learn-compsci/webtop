@@ -13,7 +13,7 @@ Docker is essential for running `webtop`. Follow these steps to install Docker D
 <br/><img src="images/webtopinstallguide/assets-windows/windows-install-docker-download.png" alt="Install Docker Desktop from the website. Preferably, install the one NOT on the microsoft store" width="600">
 
 2. **Run the Installer**: Double-click the downloaded file to run the installer. Follow the on-screen instructions to complete the installation.
-    - **Configure Settings**: Please make sure to check `use WSL2 instead of Hyper-V` <br/><img src="images/webtopinstallguide/assets-windows/windows-install-docker-allowWSL.png" alt="Hoho Hi there!" width="600">
+    - **Configure Settings**: Please make sure to check `use WSL2 instead of Hyper-V` if it exists. (This option might not appear for some users, in these cases, please continue) <br/><img src="images/webtopinstallguide/assets-windows/windows-install-docker-allowWSL.png" alt="Hoho Hi there!" width="600">
 
     - **Let Docker Install**: The installer will take a few minutes to set up Docker Desktop. Once completed, you may need to restart your computer.
 
