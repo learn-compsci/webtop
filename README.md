@@ -104,12 +104,12 @@ A daemon is a background program that runs continuously and handles requests. If
 ---
 
 ### Copy Pasting
-Webtop runs on selkies, which can display a Linux desktop in your browser. However, copy-pasting between your host machine and the WebTop environment may *sometimes* not work as expected. In these cases, follow the steps below to copy and paste text between your host machine and the WebTop environment.
+Copy-pasting between your host machine and the WebTop environment may *sometimes* not work as expected. In these cases, follow the steps below to copy and paste text between your host machine and the WebTop environment (or vice-versa).
 
 **Solution:**  
-- Open the selkies menu by clicking the small blue bar on the left side of the screen.
+- Open the menu by clicking the small blue bar on the left side of the screen.
 - Open the "Clipboard" setting.
-- The "Clipboard" text-box is syncronised with the "copy/paste" mechanism of webtop. Whatever you put in there, you will be able to paste in the webtop environment. Whatever you copy in the webtop environment, will appear in the "Clipboard" text-box.
+- The "Clipboard" text-box is synchronised with the "copy/paste" mechanism of WebTop. Whatever you put in there, you will be able to paste in the webtop environment. Likewise, whatever you copy in the WebTop environment, will appear in the "Clipboard" text-box.
 
 
 # Design and Rationale (for those interested)
