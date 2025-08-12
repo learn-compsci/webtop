@@ -1,6 +1,6 @@
 <!-- omit in toc -->
 # WebTop
-`webtop` ("web desktop") is a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 XFCE) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Your files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
+`webtop` ("web desktop") is a simple solution to run a Linux operating system on your existing Windows/MacOS/Linux computer. This allows a wide range of users to experience using a Linux desktop and terminal environment without the complexity of dual-booting their machine. After installation, you should be able to easily access WebTop via your browser. Your files are synchronized between the WebTop and your current operating system via a shared `data/` folder.
 
 <!-- omit in toc -->
 # Table of Contents
@@ -94,7 +94,10 @@ A daemon is a background program that runs continuously and handles requests. If
 
 
 # Design and Rationale (for those interested)
-Getting non-Linux users to run a Linux operating system isn't always easy. Installing multiple operating systems on the same machine is an involved process. Virtual machines (VMs) are sometimes slow, and it's hard to run them with equal features across both Windows (x86 machines) and Mac (ARM machines) (we've tried!). 
+
+`webtop` ("web desktop") aims to be a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 XFCE) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
+
+Getting non-Linux users to run a Linux operating system isn't always easy. Installing multiple operating systems on the same machine is an involved process. Virtual machines (VMs) are sometimes slow, and it's hard to run them with equal features across both Windows (x86 machines) and Mac (ARM machines) (we've tried!). Therefore, WebTop is what we think is the best way to experience Linux as a start. 
 
 `webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on the [Selkies](https://github.com/linuxserver/docker-baseimage-selkies) technology. Selkies is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). 
 
