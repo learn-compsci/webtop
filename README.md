@@ -5,14 +5,15 @@
 <!-- omit in toc -->
 # Table of Contents
 - [Beginner Friendly Guide to `webtop`](#beginner-friendly-guide-to-webtop)
-- [`webtop` for Advanced Users](#webtop-for-advanced-users)
-  - [Requirements](#requirements)
-  - [Installing and Running `webtop`](#installing-and-running-webtop)
-- [Critical Usage Notes](#critical-usage-notes)
-- [Troubleshooting Common Issues](#troubleshooting-common-issues)
-  - [Error: failed to bind host port..](#error-failed-to-bind-host-port)
-  - [Error: "Cannot connect to the Docker daemon"](#error-cannot-connect-to-the-docker-daemon)
-- [Design and Rationale](#design-and-rationale-for-those-interested)
+- [`webtop` for ✨Advanced Users✨](#webtop-for-advanced-users)
+    - [Requirements](#requirements)
+    - [Installing and Running `webtop`](#installing-and-running-webtop)
+- [🚨Critical Usage Notes🚨](#critical-usage-notes)
+- [🔨Troubleshooting Common Issues🔨](#troubleshooting-common-issues)
+    - [Error: failed to bind host port..](#error-failed-to-bind-host-port)
+    - [Error: "Cannot connect to the Docker daemon"](#error-cannot-connect-to-the-docker-daemon)
+    - [Copy Pasting](#copy-pasting)
+- [Design and Rationale (for those interested)](#design-and-rationale-for-those-interested)
 
 # Beginner Friendly Guide to `webtop`
 This section provides a beginner-friendly guide to installing and using `webtop`. 
