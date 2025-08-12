@@ -24,6 +24,16 @@ This section provides a beginner-friendly guide to installing and using `webtop`
 [![Mac Logo](images/webtopinstallguide/assets-generic/mac-logo.svg)](webtopinstall-mac.md)
 [![Linux Logo](images/webtopinstallguide/assets-generic/linux-logo.svg)](webtopinstall-linux.md)
 
+<br><br>
+
+**Please do not continue past this point if you're unfamiliar with Git or Docker! Use the guides above.**
+
+<br> <br>
+
+--- 
+
+<br><br><br><br><br><br><br>
+
  If you are already familiar with these tools, you can skip to the [Advanced Users](#webtop-for-advanced-users) section.
 
 # `webtop` for ✨Advanced Users✨
