@@ -113,6 +113,8 @@ Copy-pasting between your host machine and the WebTop environment may *sometimes
 - The "Clipboard" text-box is synchronised with the "copy/paste" mechanism of WebTop. Whatever you put in there, you will be able to paste in the webtop environment. Likewise, whatever you copy in the WebTop environment, will appear in the "Clipboard" text-box.
 
 
+![Copy Paste](images/webtopinstallguide/assets-generic/selkies-clipboard.png)
+
 # Design and Rationale (for those interested)
 
 `webtop` ("web desktop") aims to be a simple solution to run a Linux operating system and desktop environment (specifically: Debian 12 XFCE) within your existing operating system, and interact with the Linux desktop in your browser (no VirtualBox / VMWare / VNC client necessary!). Files are synchronized between the Linux instance and your current operating system via a shared `data/` folder.
