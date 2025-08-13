@@ -111,6 +111,7 @@ Copy-pasting between your host machine and the WebTop environment may *sometimes
 - Open the menu by clicking the small blue bar on the left side of the screen.
 - Open the "Clipboard" setting.
 - The "Clipboard" text-box is synchronised with the "copy/paste" mechanism of WebTop. Whatever you put in there, you will be able to paste in the webtop environment. Likewise, whatever you copy in the WebTop environment, will appear in the "Clipboard" text-box.
+- Note that to copy from the terminal in WebTop, highlight the stuff you want to copy, and press Ctrl-Shift-C (not Control-C). Pasting is usually Ctrl-Shift-V.
 
 
 ![Copy Paste](images/webtopinstallguide/assets-generic/selkies-clipboard.png)
