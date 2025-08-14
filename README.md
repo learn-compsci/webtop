@@ -107,6 +107,8 @@ A daemon is a background program that runs continuously and handles requests. If
 ### Copy Pasting
 Copy-pasting between your host machine and the WebTop environment may *sometimes* not work as expected. In these cases, follow the steps below to copy and paste text between your host machine and the WebTop environment (or vice-versa).
 
+**Note: we notice that copy-paste works on Chrome/Chromium based browsers, but often doesn't on Firefox** 
+
 **Solution:**  
 - Open the menu by clicking the small blue bar on the left side of the screen.
 - Open the "Clipboard" setting.
