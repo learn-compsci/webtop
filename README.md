@@ -80,6 +80,8 @@ Before using `webtop`, please read the following important notes regarding the `
 - **System Wide Applications**: If you install applications system-wide, they may not be available the next time you start `webtop` (due to the above behavior). 
     - You can install applications locally (within `~/`), or use [proot-apps](https://github.com/linuxserver/proot-apps) to do this, but we try to install everything that you need from the start.
 
+- **Backgrounds**: The CS1010 webtop container loads a small rotating background list from `https://cs1010-ta.github.io/cs1010-webtop-backgrounds/manifest.json`. If that site is unavailable, WebTop will still start normally without the rotating backgrounds.
+
 # 🔨Troubleshooting Common Issues🔨
 This section provides solutions to common issues you might encounter while using `webtop`. 
 
@@ -125,4 +127,3 @@ Copy-pasting between your host machine and the WebTop environment may *sometimes
 Getting non-Linux users to run a Linux operating system isn't always easy. Installing multiple operating systems on the same machine is an involved process. Virtual machines (VMs) are sometimes slow, and it's hard to run them with equal features across both Windows (x86 machines) and Mac (ARM machines) (we've tried!). Therefore, WebTop is what we think is the best way to experience Linux as a start. 
 
 `webtop` is heavily based on [docker-webtop](https://github.com/linuxserver/docker-webtop), which is itself based on the [Selkies](https://github.com/linuxserver/docker-baseimage-selkies) technology. Selkies is the primary technology that allows us to interact with the Linux desktop in a browser over [VNC](https://en.wikipedia.org/wiki/VNC). 
-
