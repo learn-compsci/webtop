@@ -10,7 +10,7 @@ services:
       - TZ=Asia/Singapore
       - SUBFOLDER=/
       - TITLE=CS1010 WebTop
-      - WEBTOP_BACKGROUND_MANIFEST_URL=https://cs1010-ta.github.io/cs1010-webtop-backgrounds/manifest.json
+      - WEBTOP_BACKGROUND_MANIFEST_URL=https://cs1010.entainer.app/webtop-backgrounds/manifest.json
     volumes:
       - ./data:/config
       - /var/run/docker.sock:/var/run/docker.sock
