@@ -80,7 +80,7 @@ Before using `webtop`, please read the following important notes regarding the `
 - **System Wide Applications**: If you install applications system-wide, they may not be available the next time you start `webtop` (due to the above behavior). 
     - You can install applications locally (within `~/`), or use [proot-apps](https://github.com/linuxserver/proot-apps) to do this, but we try to install everything that you need from the start.
 
-- **Backgrounds**: The CS1010 webtop container loads a small rotating background list from `https://cs1010.entainer.app/webtop-backgrounds/manifest.json`. If that site is unavailable, WebTop will still start normally without the rotating backgrounds.
+- **Backgrounds**: The CS1010 webtop container loads a small rotating background list from `https://cs1010.org/webtop-backgrounds/manifest.json`. If that site is unavailable, WebTop will still start normally without the rotating backgrounds.
 
 # 🔨Troubleshooting Common Issues🔨
 This section provides solutions to common issues you might encounter while using `webtop`. 
